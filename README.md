@@ -12,7 +12,10 @@ PGADMIN_PASSWORD=
 * Install the dependencies (preferably in a Virtual environment)
 RUN pip3 install -r requirements.txt
 
-* RUN docker-compose run app alembic revision --autogenerate -m "New Migration" (For your migrations)
+* RUN 
+```shell
+$ docker-compose run app alembic revision --autogenerate -m "New Migration"
+```
 
 * RUN docker-compose run app alembic upgrade head (To commit the Migration)
 
