@@ -9,8 +9,12 @@ DB_NAME=
 PGADMIN_EMAIL=
 PGADMIN_PASSWORD=
 ```
+
 * Install the dependencies (preferably in a Virtual environment)
-RUN pip3 install -r requirements.txt
+RUN 
+```shell
+$ pip3 install -r requirements.txt
+```
 
 * RUN the below for your migration
 ```shell
@@ -26,6 +30,7 @@ $ docker-compose run app alembic upgrade head
 ```shell
 docker-compose build 
 ```
+
 * RUN
 ```shell
 docker-compose up
